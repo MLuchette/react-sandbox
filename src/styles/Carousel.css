@@ -1,0 +1,47 @@
+.carousel {
+    overflow: hidden;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 300ms;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: steelblue;
+    color: #fff;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.indicators > button {
+    margin: 5px;
+    color: whitesmoke;
+    background-color: gray;
+    border: none;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.indicators > button.active {
+    background-color: darkslateblue;
+}
+
+.indicators > button:hover {
+    filter: brightness(75%);
+    transition: ease 200ms;
+}
+
+.indicators > button:active {
+    filter: brightness(50%);
+    transition: ease 200ms;
+}
